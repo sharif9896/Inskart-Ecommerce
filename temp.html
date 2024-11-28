@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blub</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bul{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cen{
+            background-color: yellow;
+        }
+        .yello{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* background-color: yellow; */
+        }
+    </style>
+</head>
+<body>
+    <div class="bul">
+        <div id="cen" class="yello cen">
+
+        </div>
+    </div>
+    <script>
+        let ft=document.querySelector("#cen")
+        let fd=function(){
+            ft.classList.toggle("cen")
+        }
+        setInterval(fd,1000)
+        
+
+    </script>
+</body>
+</html>
